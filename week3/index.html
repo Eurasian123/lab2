@@ -8,6 +8,7 @@
 	text-align:center; 
 	background-image: url('background.png');
 	background-repeat: repeat-y;
+	background-size: contain;
 	margin-right:35px;
 	margin-left:35px;
 	}
@@ -15,6 +16,17 @@
 	p {
 	margin-right:60px;
 	margin-left:60px;
+	}
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.container .image {
+		width: 50%;
+	}
+	.container img {
+		width: 600px;
+		margin: 15px;
 	}
 </style>
 <title>My profile</title>
@@ -34,11 +46,16 @@
 
 <p>For interests in particular, I am in <strong>quite a number of fandoms.</strong> Listing them down here would be quite a waste as I may miss some that are just as important to me, so here's a few images from some favorite games I enjoy to gauge at least one glimpse into my interests.</p>
 
-<image src="uno.png" alt="Irithyll" width="800" height="450"></iframe>
-<image src="dos.png" alt="Wrath"></iframe>
-<image src="tres.png" alt="Rest Stop" width="800" height="417"></iframe>
-<image src="quarter.png" alt="Dar al-Shifa" width="800" height="400"></iframe>
-
+<div class="container">
+<div class="image">
+<image src="uno.png" alt="Irithyll"></image></div>
+<div class="image">
+<image src="dos.png" alt="Wrath" height="70%"></image></div>
+<div class="image">
+<image src="tres.png" alt="Rest Stop"></image></div>
+<div class="image">
+<image src="quarter.png" alt="Dar al-Shifa"></image></div>
+</div>
 
 <footer>
 <hr></hr>
