@@ -1,0 +1,61 @@
+body {
+	font-family: 'VT323', monospace;
+	color: white;
+}
+
+.home {
+	background-image: url("images/falling.gif");
+	background-size: cover;
+}
+
+.limbo {
+	background-image: url("images/limbo.png");
+	background-size: cover;
+}
+
+.lust {
+	background-image: url("images/lust.png");
+	background-size: cover;
+}
+
+.topnav {
+	position: fixed;
+	font-size: 26px;
+	top: 0;
+	left: 0;
+	max-width: 90vw;
+	width: 100%;
+	padding: 0px 80px;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navcont a, .quicknav {
+	color: white;
+	text-decoration: none;
+}
+
+.drop {
+	display: inline-block;
+}
+
+.dropcont {
+	display: none;
+	position: absolute;
+	padding: 5px 45px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropcont a {
+	color: white;
+	padding: 10px 0px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.drop:hover .dropcont {
+	display: block;
+}
