@@ -1,3 +1,8 @@
+@font-face { 
+font-family: "VCR OSD Mono";
+src: url("VCR_OSD_MONO_1.001.ttf")format("truetype"); 
+}
+
 body {
 	font-family: 'VT323', monospace;
 	color: white;
@@ -33,29 +38,49 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
 	z-index: 90;
 }
+/*
+.cover .openbutton, .loading {
+	margin-left: 50%;
+	margin-top: 50%;
+}*/
 
 .openbutton {
 	z-index: 92;
 	background-color: #000000;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	color: #FFFFFF;
 	border: 3px solid #FFFFFF;
 	border-radius: 8px;
 	font-size: 20px;
 	font-weight: bold;
-	font-family: VT323, monospace;
+	font-family: "VCR OSD Mono", monospace;
 	padding: 20px;
 	cursor: pointer;
 	transition-duration: 0.4s;
+	position: absolute;
 }
 
 .openbutton:hover {
 	color: #000000;
 	background-color: #FFFFFF;
+}
+
+.loading {
+	top: 45%;
+	left: 50%;
+	-ms-transform: translate(-40%, -50%);
+	transform: translate(-40%, -50%);
+	z-index: 91;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: "VCR OSD Mono", monospace;
+	position: absolute;
+	display: none;
 }
 
 .topnav {
@@ -71,6 +96,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	font-family: "VCR OSD Mono", monospace;
 }
 
 .navcont a, .quicknav {
