@@ -83,6 +83,24 @@ body {
 	display: none;
 }
 
+.bypass {
+	top: 90%;
+	left: 10%;
+	-ms-transform: translate(-40%, -50%);
+	transform: translate(-40%, -50%);
+	z-index: 93;
+	font-size: 15px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.2);
+	transition-duration: 0.4s;
+	position: absolute;
+	cursor: pointer;
+}
+
+.bypass:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
 .topnav {
 	position: fixed;
 	font-size: 26px;
