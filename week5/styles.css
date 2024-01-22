@@ -1,6 +1,8 @@
 body {
 	font-family: 'VT323', monospace;
 	color: white;
+	background-image: url("images/blank.png");
+	background-size: cover;
 }
 
 .home {
@@ -15,6 +17,11 @@ body {
 
 .lust {
 	background-image: url("images/lust.png");
+	background-size: cover;
+}
+
+.gluttony {
+	background-image: url("images/gluttony.png");
 	background-size: cover;
 }
 
