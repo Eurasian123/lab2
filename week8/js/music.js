@@ -10,15 +10,17 @@ function musicLoad(layer) {
 	switch(layer) {
 		case "limbo":
 			clair.loop = true;
+			clair.volume = 0.6;
 			clair.play();
 			break;
 		case "lust":
 			req.loop = true;
+			req.volume = 0.3;
 			req.play();
-			req.volume = 0.2;
 			break;
 		case "gluttony":
 			glory.loop = true;
+			glory.volume = 0.3;
 			glory.play();
 			break;
 		case "greed":

@@ -154,18 +154,22 @@ body {
 
 .drop {
 	display: inline-block;
+	padding: 25px 0px;
 }
 
 .dropcont {
 	display: none;
 	position: absolute;
 	padding: 5px 45px;
+	margin: 10px;
+	margin-top: 25px;
+	width: inherit;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .dropcont a {
 	color: white;
-	padding: 10px 0px;
+	padding: 15px 10px;
 	text-decoration: none;
 	display: block;
 	text-align: center;
