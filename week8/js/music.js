@@ -29,6 +29,7 @@ function musicLoad(layer) {
 			break;
 		case "wrath":
 			deep.loop = true;
+			deep.volume = 0.6;
 			deep.play();
 	}
 }
