@@ -3,8 +3,10 @@ var req = new Audio("ost/Requiem.mp3");
 var glory = new Audio("ost/Glory.mp3");
 var dune = new Audio("ost/Dune Eternal.mp3");
 var deep = new Audio("ost/Deep Blue.mp3");
-// var tba = new Audio("ost/Requiem.mp3");
+// var altar = new Audio("ost/Requiem.mp3");
 // var red = new Audio("ost/Requiem.mp3");
+
+function empty() {};
 
 function musicLoad(layer) {
 	switch(layer) {
@@ -31,5 +33,6 @@ function musicLoad(layer) {
 			deep.loop = true;
 			deep.volume = 0.6;
 			deep.play();
-	}
+	};
+	musicLoad = empty;
 }

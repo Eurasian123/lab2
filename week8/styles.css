@@ -179,12 +179,20 @@ body {
 	display: block;
 }
 
+.gluttony-music {
+		margin: auto;
+		width: 50%;
+		margin-top: 80px;
+		padding: 10px;
+	}
+
 .form-centered {
 		margin: auto;
 		width: 60%;
 		margin-top: 80px;
 		padding: 10px;
 	}
+	
 .error {
 	color: #FF0000;
 }
