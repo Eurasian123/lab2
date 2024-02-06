@@ -26,3 +26,5 @@ function insertDisc() {
 	document.getElementById("byp").style.display = "none";
 	setTimeout(lseq1, 6000);
 }
+
+/* I hope this worthless comment will fix this one bug! */
