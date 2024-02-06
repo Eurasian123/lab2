@@ -1,10 +1,10 @@
-var clair = new Audio("ost/Clair De Lune.mp3");
-var req = new Audio("ost/Requiem.mp3");
-var glory = new Audio("ost/Glory.mp3");
-var dune = new Audio("ost/Dune Eternal.mp3");
-var deep = new Audio("ost/Deep Blue.mp3");
-// var altar = new Audio("ost/Requiem.mp3");
-// var red = new Audio("ost/Requiem.mp3");
+var clair = new Audio("../ost/Clair De Lune.mp3");
+var req = new Audio("../ost/Requiem.mp3");
+var glory = new Audio("../ost/Glory.mp3");
+var dune = new Audio("../ost/Dune Eternal.mp3");
+var deep = new Audio("../ost/Deep Blue.mp3");
+// var altar = new Audio("../ost/Requiem.mp3");
+// var dance = new Audio("../ost/Requiem.mp3");
 
 function empty() {};
 
