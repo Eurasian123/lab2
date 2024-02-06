@@ -3,31 +3,31 @@
 
 <head>
     <title>LAYER 5 :: WRATH</title>
-    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/icon.ico" type="image/x-icon">
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-	<script src="js/music.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+	<script src="../js/music.js"></script>
 </head>
 
 <body class="wrath" onclick="musicLoad('wrath');">
 <div class="topnav">
 	<p id="date"></p>
 	<nav class="navcont">
-		<a href="index.html">Home</a>
+		<a href="../home">Home</a>
 		<div class="drop">
 		<a href="javascript:void(0)" class="quicknav">Quick Navigation</a>
 		<div class="dropcont">
-			<a href="limbo.html">Limbo</a>
-			<a href="lust.html">Lust</a>
-			<a href="gluttony.html">Gluttony</a>
-			<a href="greed.html">Greed</a>
-			<a href="wrath.php">Wrath</a>
-			<a href="heresy.html">Heresy</a>
-			<a href="violence.html">Violence</a>
+			<a href="../limbo">Limbo</a>
+			<a href="../lust">Lust</a>
+			<a href="../gluttony">Gluttony</a>
+			<a href="../greed">Greed</a>
+			<a href="../wrath">Wrath</a>
+			<a href="../heresy">Heresy</a>
+			<a href="../violence">Violence</a>
 		</div>
 		</div>
 		<a href="#">Contact</a>
@@ -126,9 +126,33 @@ echo "<br>";
 echo $comment;
 echo "<br>";
 echo $gender;
+echo "<br>";
+echo "<br>";
 ?>
 
-<script src="js/genscript.js"></script>
+<?php
+$servername = "localhost";
+$username = "webprogmi222_sf221";
+$password = "xE*Y2nleNVvZm[!!";
+$dbname = "webprogmi222_sf221";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+  echo "<script>alert('Connection failed!');</script>";
+}
+
+$sql = "INSERT INTO kumandal_myguests (name, email, gender, website, comment) VALUES ('$name', '$email', '$gender', '$website', '$comment')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Your feedback has been recorded. Thank you!";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
+
+<script src="../js/genscript.js"></script>
 </body>
 
 </html>
