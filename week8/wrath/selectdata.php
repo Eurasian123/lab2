@@ -15,7 +15,9 @@ $sql = "SELECT name, gender, email, website, comment FROM kumandal_myguests";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
 echo "Guest: " . $row["name"]. " (" . $row["gender"]. ") - " . $row["email"]. ", " . $row["website"]. "   '" . $row["comment"]. "' ";
+	}
 } else {
   echo "0 results";
 }
