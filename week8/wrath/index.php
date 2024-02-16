@@ -30,9 +30,11 @@
 			<a href="../violence">Violence</a>
 		</div>
 		</div>
-		<a href="#">Contact</a>
+		<a href="../contact">Contact</a>
 	</nav>	
 </div>
+<script src="../js/genscript.js"></script>
+<script src="../js/goDown.js"></script>
 
 <?php
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
@@ -151,8 +153,10 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-
-<script src="../js/genscript.js"></script>
+<div class="bottom">
+<canvas id="descendArrow" class="downArrow"></canvas>
+<a class="dselect_me" id="selectArea" href="../limbo"></a>
+</div>
 </body>
 
 </html>

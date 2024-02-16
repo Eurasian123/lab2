@@ -59,6 +59,11 @@ body {
 	background-attachment: fixed;
 }
 
+/* 
+ MAIN ^^^^
+			HOME COVER vvvv
+*/
+
 .cover {
 	background-image: url("images/blank.png");
 	background-size: cover;
@@ -130,6 +135,11 @@ body {
 	color: rgba(255, 255, 255, 1);
 }
 
+/* 
+ HOME COVER ^^^^
+			NAV vvvv
+*/
+
 .topnav {
 	position: fixed;
 	font-size: 26px;
@@ -139,17 +149,23 @@ body {
 	width: 100%;
 	padding: 0px 80px;
 	z-index: 80;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0,0,0,0.5);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	font-family: "VCR OSD Mono", monospace;
 }
+/*
+.topnav:not(.navcont){
+	filter: brightness(50%);
+}
+*/
 
 .navcont a, .quicknav {
 	color: white;
 	text-decoration: none;
 	padding: 4px;
+	filter: brightness(100%);
 }
 
 .drop {
@@ -179,6 +195,75 @@ body {
 	display: block;
 }
 
+.bottom {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	position: relative;
+	left: 43.5%;
+	max-width: 400px;
+}
+
+.downArrow {
+    display: block;
+	width: 200px;
+	height: 100px;
+}
+
+.dselect_me {
+	position: absolute;
+	top: 0;
+	width: 200px;
+	height: 50px;
+	cursor: pointer;
+}
+
+/* 
+ NAV ^^^^
+			HOME vvvv
+*/
+
+.welcome {
+	margin: auto;
+	margin-top: 15em;
+}
+
+.welcome img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.home_text {
+	margin: auto;
+	margin-top: 16em;
+	width: 80%;
+	text-align: center;
+}
+
+.home_text h1 {
+	font-size: 40px;
+}
+
+.home_text p {
+	font-size: 22px;
+}
+
+/* 
+ HOME ^^^^
+			LIMBO vvvv
+*/
+
+/* 
+ LIMBO ^^^^
+			LUST vvvv
+*/
+
+/* 
+ LUST ^^^^
+			GLUTTONY vvvv
+*/
+
 .gluttony-music {
 		margin: auto;
 		width: 50%;
@@ -196,6 +281,17 @@ body {
 .error {
 	color: #FF0000;
 }
+
+/* 
+ GLUTTONY ^^^^
+			GREED vvvv
+*/
+
+/* 
+ GREED ^^^^
+			WRATH vvvv
+*/
+
 #formthing .form_label {
     display: block;
     margin-bottom: 5px;
