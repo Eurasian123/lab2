@@ -92,7 +92,7 @@ function test_input($data) {
 ?>
 
 <div class="form-centered">
-<h2>PHP Form Validation Example</h2>
+<h2>User Feedback Form</h2>
 <p><span class="error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="formthing">  
   <span class="form_label">Name:</span> <input type="text" name="name" value="<?php echo $name;?>">
@@ -116,20 +116,12 @@ function test_input($data) {
 </form>
 </div>
 
-<?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-echo "<br>";
-echo "<br>";
-?>
+<div class="descendArrow">
+<p>descend</p>
+<div class="triangle">
+<a class="dselect_me" href="../limbo"></a>
+</div>
+</div>
 
 <?php
 $servername = "localhost";
@@ -152,10 +144,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-<div class="bottom">
-<canvas id="descendArrow" class="downArrow"></canvas>
-<a class="dselect_me" id="selectArea" href="../limbo"></a>
-</div>
-<script src="../js/goDown.js"></script>
+
 </body>
 </html>
