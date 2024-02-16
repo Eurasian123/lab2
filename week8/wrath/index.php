@@ -34,7 +34,6 @@
 	</nav>	
 </div>
 <script src="../js/genscript.js"></script>
-<script src="../js/goDown.js"></script>
 
 <?php
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
@@ -157,6 +156,6 @@ $conn->close();
 <canvas id="descendArrow" class="downArrow"></canvas>
 <a class="dselect_me" id="selectArea" href="../limbo"></a>
 </div>
+<script src="../js/goDown.js"></script>
 </body>
-
 </html>
