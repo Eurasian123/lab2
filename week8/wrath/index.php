@@ -119,7 +119,7 @@ function test_input($data) {
 <div class="descendArrow">
 <p>descend</p>
 <div class="triangle">
-<a class="dselect_me" href="../limbo"></a>
+<a class="dselect_me" href="../heresy"></a>
 </div>
 </div>
 
